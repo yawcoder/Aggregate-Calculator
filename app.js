@@ -10,6 +10,6 @@ const biology = document.querySelector('.biology');
 const subject = document.querySelectorAll('#subject');
 const calcButton = document.querySelector('#calculate');
 
-calcButton.addEventListener('click', () => { 
+calcButton.addEventListener('click', () => {
     
 })
