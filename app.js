@@ -10,24 +10,34 @@ const biology = document.querySelector('.biology');
 const subjectp = document.querySelectorAll('#subject');
 const calcButton = document.querySelector('#calculate');
 //const aggregate = document.querySelector('#aggregate');
+const studentType = document.getElementsByName('student-type');
 
 //click event for adding values of grades
 calcButton.addEventListener('click', () => {
 
-     //PROCESS FOR CALCULATING AGGREGATE FOR CORE SUBJECTS
-     let coreArr = [];
-     
+
+     //PROCESS FOR CALCULATING AGGREGATE FOR CORE SUBJECT
+     let coreSum
      //functions for pushing values of selected grades to core Array
-     coreArr.push(parseInt(gradeValue(english)));
-     coreArr.push(parseInt(gradeValue(coreMaths)));
-     coreArr.push(parseInt(gradeValue(science)));
-     coreArr.push(parseInt(gradeValue(social)));
+     let englishGrade = parseInt(gradeValue(english));
+     let coreMathsGrade = parseInt(gradeValue(coreMaths));
+     let scienceGrade = parseInt(gradeValue(science));
+     let socialGrade = parseInt(gradeValue(social));
+
+     //using science for science student and social for non-science student
+     for(i=0; i < studentType.length; i++){
+          if(studentType[i].checked == 0){
+                coreSum = englishGrade + coreMathsGrade + scienceGrade;
+          } else {
+                coreSum = englishGrade + coreMathsGrade + socialGrade;
+          }
+     }
      
      //function for sorting core Array in ascending order
-     let sortedCoreArr = coreArr.sort((a,b) => a - b);
+     //let sortedCoreArr = coreArr.sort((a,b) => a - b);
 
      //add first 3 values of sorted core Array
-     let coreSum = sortedCoreArr[0] + sortedCoreArr[1] + sortedCoreArr[2];
+     //let coreSum = sortedCoreArr[0] + sortedCoreArr[1] + sortedCoreArr[2];
 
      //-----------------------------------------------------------------------
      

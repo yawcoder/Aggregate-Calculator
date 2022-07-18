@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="#">
+    <form action="#" onsubmit="return false">
         <label for="english">English:</label>
         <select name="english" id="subject" class="english">
             <option value="1">A1</option>
@@ -57,6 +57,12 @@
             <option value="8">E8</option>
             <option value="9">F9</option>
         </select>
+
+        <div>
+            <label for="student-type"><input type="radio" name="student-type" value="1" required>Science Student</label>
+            <label for="student-type"><input type="radio" name="student-type" value="2" required>Non-Science Student</label>
+        </div>
+
         <label for="e-maths">Elective Maths:</label>
         <select name="e-maths" id="subject" class="e-maths">
             <option value="1">A1</option>
@@ -109,7 +115,7 @@
             <option value="9">F9</option>
             <option value="0">Not Available</option>
         </select>
-        <button type="button" id="calculate">Submit</button>
+        <button type="submit" id="calculate">Submit</button>
     </form>
 
     <h1 align="center">Aggregate</h1>
