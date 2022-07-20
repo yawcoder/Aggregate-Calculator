@@ -8,9 +8,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+        <label for="e-maths"><input type="checkbox" name="elective" onclick="return myfun()" value="Elective-Maths" id="e-maths" class="checkbox">Elective-Maths</label>
+
+        <label for="Physics"><input type="checkbox" name="elective" onclick="return myfun()" value="Physics" id="Physics" class="checkbox">Physics</label>
+        
+        <label for="Chemistry"><input type="checkbox" name="elective" onclick="return myfun()" value="Chemistry" id="Chemistry" class="checkbox">Chemistry</label>
+        
+        <label for="Biology"><input type="checkbox" name="elective" onclick="return myfun()" value="Biology" id="Biology" class="checkbox">Biology</label>
+        
+        <label for="Geography"><input type="checkbox" name="elective" onclick="return myfun()" value="Geography" id="Geography" class="checkbox">Geography</label>
+        
+        <label for="Principles-of-Cost-Accounting"><input type="checkbox" name="elective" onclick="return myfun()" value="Principles of Cost Accounting" id="Principles-of-Cost-Accounting" class="checkbox">Principles of Cost Accounting</label>
+        
+        <label for="Financial-Accounting"><input type="checkbox" name="elective" onclick="return myfun()" value="Financial Accounting" id="Financial-Accounting" class="checkbox">Financial-Accounting</label>
+        
+        <label for="Business-Management"><input type="checkbox" name="elective" onclick="return myfun()" value="Business Management" id="Business-Management" class="checkbox">Business Management</label>
+        
+        <label for="Economics"><input type="checkbox" name="elective" onclick="return myfun()" value="Economics" id="Economics" class="checkbox">Economics</label>
+        
+        <label for="History"><input type="checkbox" name="elective" onclick="return myfun()" value="History" id="History" class="checkbox">History</label>
+        
+        <label for="French"><input type="checkbox" name="elective" onclick="return myfun()" value="French" id="French" class="checkbox">French</label>
+        
+        <label for="Govt"><input type="checkbox" name="elective" onclick="return myfun()" value="Goverment" id="Govt" class="checkbox">Goverment</label>
+        
+        <label for="CRS"><input type="checkbox" name="elective" onclick="return myfun()" value="Christian Religious Studies" id="CRS" class="checkbox">Chrsitian Religious Studies</label>
+
+        <label for="gka"><input type="checkbox" name="elective" onclick="return myfun()" value="General Knowledge in Arts" id="gka" class="checkbox">General Knowledge in Arts</label>
+
+        <label for="lit"><input type="checkbox" name="elective" onclick="return myfun()" value="Literature" id="lit" class="checkbox">Literature in English</label>
+
+        <label for="twi"><input type="checkbox" name="elective" onclick="return myfun()" value="Twi" id="twi" class="checkbox">Twi</label>
+
+        <label for="ga"><input type="checkbox" name="elective" onclick="return myfun()" value="Ga" id="ga" class="checkbox">Ga</label>
+
+        <label for="dangme"><input type="checkbox" name="elective" onclick="return myfun()" value="Dangme" id="dangme" class="checkbox">Dangme</label>
+
+        <label for="ewe"><input type="checkbox" name="elective" onclick="return myfun()" value="Ewe" id="ewe" class="checkbox">Ewe</label>
+
+        <label for="food"><input type="checkbox" name="elective" onclick="return myfun()" value="Food and Nutrition" id="food" class="checkbox">Food and Nutrition</label>
+
+        <label for="mgt-in-liv"><input type="checkbox" name="elective" onclick="return myfun()" value="Management In Living" id="mgt-in-liv" class="checkbox">Management In Living</label>
+
+        <label for="tex"><input type="checkbox" name="elective" onclick="return myfun()" value="Textiles" id="tex" class="checkbox">Textiles</label>
+
+        <label for="basketry"><input type="checkbox" name="elective" onclick="return myfun()" value="Basketry" id="basketry" class="checkbox">Basketry</label>
+
+        <label for="pic"><input type="checkbox" name="elective" onclick="return myfun()" value="Picture Making" id="pic" class="checkbox">Picture Making</label>
+
+        <label for="sculp"><input type="checkbox" name="elective" onclick="return myfun()" value="Sculpture" id="sculp" class="checkbox">Sculpture</label>
+
+        <label for="graph"><input type="checkbox" name="elective" onclick="return myfun()" value="Graphic Design" id="graph" class="checkbox">Graphic Design</label>
+
+        <label for="leather"><input type="checkbox" name="elective" onclick="return myfun()" value="Leather Work" id="leather" class="checkbox">Leather Work</label>
+
+        <label for="agric"><input type="checkbox" name="elective" onclick="return myfun()" value="General Agriculture" id="agric" class="checkbox">General Agriculture</label>
+
+        <label for="animal"><input type="checkbox" name="elective" onclick="return myfun()" value="Animal Husbandry" id="animal" class="checkbox">Animal Husbandry</label>
+
+        <div>
+            <span id="notvalid"></span>
+        </div>
+
+        <div class="print-values">
+            <p id="valuelist"></p>
+        </div>
+
+        <button type="button" id="add-electives">Add to Calculator</button>
+
+        
+
+
+    
+
+
+
     <form action="#" onsubmit="return false">
         <label for="english">English:</label>
-        <select name="english" id="subject" class="english">
+        <select name="english" id="english" class="english">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -22,7 +98,7 @@
             <option value="9">F9</option>
         </select>
         <label for="core-maths">Core Maths:</label>
-        <select name="core-maths" id="subject" class="core-maths">
+        <select name="core-maths" id="core-maths" class="core-maths">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -34,7 +110,7 @@
             <option value="9">F9</option>
         </select>
         <label for="science">Integrated Science:</label>
-        <select name="science" id="subject" class="science">
+        <select name="science" id="science" class="science">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -46,7 +122,7 @@
             <option value="9">F9</option>
         </select>
         <label for="social">Social Studies:</label>
-        <select name="social" id="subject" class="social">
+        <select name="social" id="social" class="social">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -59,12 +135,12 @@
         </select>
 
         <div>
-            <label for="student-type"><input type="radio" name="student-type" value="1" required>Science Student</label>
-            <label for="student-type"><input type="radio" name="student-type" value="2" required>Non-Science Student</label>
+            <label for="student-type"><input type="radio" name="student-type" required>Science Student</label>
+            <label for="student-type"><input type="radio" name="student-type" required>Non-Science Student</label>
         </div>
 
         <label for="e-maths">Elective Maths:</label>
-        <select name="e-maths" id="subject" class="e-maths">
+        <select name="e-maths" id="e-maths" class="e-maths">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -77,7 +153,7 @@
             <option value="0">Not Available</option>
         </select>
         <label for="physics">Physics:</label>
-        <select name="physics" id="subject" class="physics">
+        <select name="physics" id="physics" class="physics">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -90,7 +166,7 @@
             <option value="0">Not Available</option>
         </select>
         <label for="chemistry">Chemistry:</label>
-        <select name="chemistry" id="subject" class="chemistry">
+        <select name="chemistry" id="chemistry" class="chemistry">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -103,7 +179,7 @@
             <option value="0">Not Available</option>
         </select>
         <label for="biology">Biology:</label>
-        <select name="biology" id="subject" class="biology">
+        <select name="biology" id="biology" class="biology">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>

@@ -7,10 +7,56 @@ const physics = document.querySelector('.physics');
 const chemistry = document.querySelector('.chemistry');
 const biology = document.querySelector('.biology');
 
-const subjectp = document.querySelectorAll('#subject');
 const calcButton = document.querySelector('#calculate');
 //const aggregate = document.querySelector('#aggregate');
 const studentType = document.getElementsByName('student-type');
+//const electives = document.getElementsByName('electives');
+const addElectiveBtn = document.getElementById('add-electives');
+
+
+
+//function for limiting number of elective selections to just 4
+function myfun(){
+     let allElectives = document.getElementsByName('elective');
+     let newVar = 0;
+     let count;
+     for(count = 0; count<allElectives.length; count++){
+          if(allElectives[count].checked == true){
+               newVar += 1;
+          }
+     }
+     if(newVar > 4){
+          document.getElementById('notvalid').innerText = "Choose only 4"
+          return false;
+     }
+}
+
+
+
+//lines and function for putting selected electives in array
+let valueList = document.getElementById('valuelist');
+let text = 'you have selected : ';
+let listArray = [];
+
+let checkboxes = document.querySelectorAll('.checkbox');
+
+for(let i=0; i < checkboxes.length; i++){
+     checkboxes[i].addEventListener('click', () => {
+          if(checkboxes[i].checked == true && listArray.length < 4){
+               //adding value to array when it is checked
+               listArray.push(checkboxes[i].value);
+               valueList.innerText = text + listArray.join('/');
+          } else {
+               //remove value from array when it is unchecked
+               listArray = listArray.filter(e => e !== checkboxes[i].value);
+               valueList.innerText = text + listArray.join('/');
+          }
+          console.log(listArray);
+     })
+}
+
+
+
 
 //click event for adding values of grades
 calcButton.addEventListener('click', () => {
@@ -32,12 +78,6 @@ calcButton.addEventListener('click', () => {
                 coreSum = englishGrade + coreMathsGrade + socialGrade;
           }
      }
-     
-     //function for sorting core Array in ascending order
-     //let sortedCoreArr = coreArr.sort((a,b) => a - b);
-
-     //add first 3 values of sorted core Array
-     //let coreSum = sortedCoreArr[0] + sortedCoreArr[1] + sortedCoreArr[2];
 
      //-----------------------------------------------------------------------
      
