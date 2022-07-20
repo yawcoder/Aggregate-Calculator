@@ -74,9 +74,9 @@ calcButton.addEventListener('click', () => {
      for(i=0; i < studentType.length; i++){
           if(studentType[i].checked == 0){
                 coreSum = englishGrade + coreMathsGrade + scienceGrade;
-          } else {
+          } else if(studentType[i].checked == 1){
                 coreSum = englishGrade + coreMathsGrade + socialGrade;
-          }
+          } //else 
      }
 
      //-----------------------------------------------------------------------
