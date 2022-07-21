@@ -12,9 +12,28 @@ body{
 }
 
 #elective-subjects{
+    width: 100%;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: ;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    line-height: 25px
+}
+
+#notvalid{
+    text-align: center;
+    color: red;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#add-electives{
+    display: block;
+    margin: auto;
+    padding: 7px 13px;
+    font-size: 1.3rem;
+    border-radius: 10px;
 }
 
 

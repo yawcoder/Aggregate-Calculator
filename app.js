@@ -31,7 +31,7 @@ function myfun(){
           }
      }
      if(newVar > 4){
-          document.getElementById('notvalid').innerText = "Choose only 4"
+          document.getElementById('notvalid').innerText = "***Please You Can Choose 4 Electives Only***"
           return false;
      }
 }
