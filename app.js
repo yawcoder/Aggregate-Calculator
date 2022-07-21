@@ -1,17 +1,22 @@
-const english = document.querySelector('.english');
-const coreMaths = document.querySelector('.core-maths');
-const science = document.querySelector('.science');
-const social = document.querySelector('.social');
-const eMaths = document.querySelector('.e-maths');
-const physics = document.querySelector('.physics');
-const chemistry = document.querySelector('.chemistry');
-const biology = document.querySelector('.biology');
+const english = document.querySelector('#english');
+const coreMaths = document.querySelector('#core-maths');
+const science = document.querySelector('#science');
+const social = document.querySelector('#social');
+const elec1 = document.querySelector('#elec1');
+const elec2 = document.querySelector('#elec2');
+const elec3 = document.querySelector('#elec3');
+const elec4 = document.querySelector('#elec4');
 
 const calcButton = document.querySelector('#calculate');
-//const aggregate = document.querySelector('#aggregate');
 const studentType = document.getElementsByName('student-type');
+let finalGrade = document.querySelector('#final');
 //const electives = document.getElementsByName('electives');
 const addElectiveBtn = document.getElementById('add-electives');
+
+ const elecLabel1 = document.getElementById('label1');
+ const elecLabel2 = document.getElementById('label2');
+ const elecLabel3 = document.getElementById('label3');
+ const elecLabel4 = document.getElementById('label4');
 
 
 
@@ -51,9 +56,21 @@ for(let i=0; i < checkboxes.length; i++){
                listArray = listArray.filter(e => e !== checkboxes[i].value);
                valueList.innerText = text + listArray.join('/');
           }
-          console.log(listArray);
+          //console.log(listArray);
      })
 }
+
+//click event and function for adding selected electives to calculator
+addElectiveBtn.addEventListener('click', () => {
+
+     elecLabel1.innerText = listArray[0] + ":";
+
+     elecLabel2.innerText = listArray[1] + ":";
+
+     elecLabel3.innerText = listArray[2] + ":";
+
+     elecLabel4.innerText = listArray[3] + ":";
+})
 
 
 
@@ -76,7 +93,7 @@ calcButton.addEventListener('click', () => {
                 coreSum = englishGrade + coreMathsGrade + scienceGrade;
           } else if(studentType[i].checked == 1){
                 coreSum = englishGrade + coreMathsGrade + socialGrade;
-          } //else 
+          } 
      }
 
      //-----------------------------------------------------------------------
@@ -85,33 +102,36 @@ calcButton.addEventListener('click', () => {
      let elecArr = [];
 
      //functions for pushing values of selected grades to elective Array
-     elecArr.push(parseInt(gradeValue(eMaths)));
-     elecArr.push(parseInt(gradeValue(physics)));
-     elecArr.push(parseInt(gradeValue(chemistry)));
-     elecArr.push(parseInt(gradeValue(biology)));
+     elecArr.push(parseInt(gradeValue(elec1)));
+     elecArr.push(parseInt(gradeValue(elec2)));
+     elecArr.push(parseInt(gradeValue(elec3)));
+     elecArr.push(parseInt(gradeValue(elec4)));
      
      //function for sorting elective Array in ascending order
      let sortedElecArr = elecArr.sort((a,b) => a - b);
 
      //if statement for when 1 elective subject is unavailable
+
      if(sortedElecArr[0] == 0 && !sortedElecArr[1] == 0){
           
           let elecSum = sortedElecArr[1] + sortedElecArr[2] + sortedElecArr[3];
 
-          let aggregate = coreSum + elecSum;
-
-          console.log(aggregate);
+            finalGrade.innerText = coreSum + elecSum;
      } 
 
      //if statement for when 2 or more electives are unavailable
      else if(sortedElecArr[1] === 0){
           console.log("Not enough Electives to calculate Aggregate");
+
+     //if statement for when there is a D7, E8 or F9 in a core subject
+     } else if(englishGrade >= 7 || socialGrade >= 7 || scienceGrade >= 7 || coreMathsGrade >= 7){
+
+          finalGrade.innerText = "diploma";
+
      } else{
           elecSum = sortedElecArr[0] + sortedElecArr[1] + sortedElecArr[2];
 
-          aggregate = coreSum + elecSum;
-
-          console.log(aggregate);
+          finalGrade.innerText = coreSum + elecSum;
 
      }
      

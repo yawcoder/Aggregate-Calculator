@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="elective-subjects">
         <label for="e-maths"><input type="checkbox" name="elective" onclick="return myfun()" value="Elective-Maths" id="e-maths" class="checkbox">Elective-Maths</label>
 
         <label for="Physics"><input type="checkbox" name="elective" onclick="return myfun()" value="Physics" id="Physics" class="checkbox">Physics</label>
@@ -66,7 +66,7 @@
         <label for="agric"><input type="checkbox" name="elective" onclick="return myfun()" value="General Agriculture" id="agric" class="checkbox">General Agriculture</label>
 
         <label for="animal"><input type="checkbox" name="elective" onclick="return myfun()" value="Animal Husbandry" id="animal" class="checkbox">Animal Husbandry</label>
-
+    </div>
         <div>
             <span id="notvalid"></span>
         </div>
@@ -86,7 +86,7 @@
 
     <form action="#" onsubmit="return false">
         <label for="english">English:</label>
-        <select name="english" id="english" class="english">
+        <select name="english" id="english" class="core">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -98,7 +98,7 @@
             <option value="9">F9</option>
         </select>
         <label for="core-maths">Core Maths:</label>
-        <select name="core-maths" id="core-maths" class="core-maths">
+        <select name="core-maths" id="core-maths" class="core">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -110,7 +110,7 @@
             <option value="9">F9</option>
         </select>
         <label for="science">Integrated Science:</label>
-        <select name="science" id="science" class="science">
+        <select name="science" id="science" class="core">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -122,7 +122,7 @@
             <option value="9">F9</option>
         </select>
         <label for="social">Social Studies:</label>
-        <select name="social" id="social" class="social">
+        <select name="social" id="social" class="core">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -139,8 +139,8 @@
             <label for="student-type"><input type="radio" name="student-type" required>Non-Science Student</label>
         </div>
 
-        <label for="e-maths">Elective Maths:</label>
-        <select name="e-maths" id="e-maths" class="e-maths">
+        <label for="e-maths" id="label1"></label>
+        <select name="e-maths" id="elec1" class="elective">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -152,8 +152,8 @@
             <option value="9">F9</option>
             <option value="0">Not Available</option>
         </select>
-        <label for="physics">Physics:</label>
-        <select name="physics" id="physics" class="physics">
+        <label for="physics" id="label2"></label>
+        <select name="physics" id="elec2" class="elective">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -165,8 +165,8 @@
             <option value="9">F9</option>
             <option value="0">Not Available</option>
         </select>
-        <label for="chemistry">Chemistry:</label>
-        <select name="chemistry" id="chemistry" class="chemistry">
+        <label for="chemistry" id="label3"></label>
+        <select name="chemistry" id="elec3" class="elective">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -178,8 +178,8 @@
             <option value="9">F9</option>
             <option value="0">Not Available</option>
         </select>
-        <label for="biology">Biology:</label>
-        <select name="biology" id="biology" class="biology">
+        <label for="biology" id="label4"></label>
+        <select name="biology" id="elec4" class="elective">
             <option value="1">A1</option>
             <option value="2">B2</option>
             <option value="3">B3</option>
@@ -195,7 +195,7 @@
     </form>
 
     <h1 align="center">Aggregate</h1>
-    <p id="aggregate"></p>
+    <p align="center" id="final"></p>
     
 
     <script src="app.js"></script>

@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#elective-subjects{
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+}
+
+
 form{
     width: 30%;
     margin: auto;
