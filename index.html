@@ -5,68 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aggregate Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="elective-subjects">
-        <label for="e-maths"><input type="checkbox" name="elective" onclick="return myfun()" value="Elective-Maths" id="e-maths" class="checkbox">Elective-Maths</label>
+    <section class="container-xxl">
+        <div class="elective-subjects">
+            <label for="e-maths"><input type="checkbox" name="elective" onclick="return myfun()" value="Elective-Maths" id="e-maths" class="checkbox">Elective-Maths</label>
 
-        <label for="Physics"><input type="checkbox" name="elective" onclick="return myfun()" value="Physics" id="Physics" class="checkbox">Physics</label>
-        
-        <label for="Chemistry"><input type="checkbox" name="elective" onclick="return myfun()" value="Chemistry" id="Chemistry" class="checkbox">Chemistry</label>
-        
-        <label for="Biology"><input type="checkbox" name="elective" onclick="return myfun()" value="Biology" id="Biology" class="checkbox">Biology</label>
-        
-        <label for="Geography"><input type="checkbox" name="elective" onclick="return myfun()" value="Geography" id="Geography" class="checkbox">Geography</label>
-        
-        <label for="Principles-of-Cost-Accounting"><input type="checkbox" name="elective" onclick="return myfun()" value="Principles of Cost Accounting" id="Principles-of-Cost-Accounting" class="checkbox">Principles of Cost Accounting</label>
-        
-        <label for="Financial-Accounting"><input type="checkbox" name="elective" onclick="return myfun()" value="Financial Accounting" id="Financial-Accounting" class="checkbox">Financial-Accounting</label>
-        
-        <label for="Business-Management"><input type="checkbox" name="elective" onclick="return myfun()" value="Business Management" id="Business-Management" class="checkbox">Business Management</label>
-        
-        <label for="Economics"><input type="checkbox" name="elective" onclick="return myfun()" value="Economics" id="Economics" class="checkbox">Economics</label>
-        
-        <label for="History"><input type="checkbox" name="elective" onclick="return myfun()" value="History" id="History" class="checkbox">History</label>
-        
-        <label for="French"><input type="checkbox" name="elective" onclick="return myfun()" value="French" id="French" class="checkbox">French</label>
-        
-        <label for="Govt"><input type="checkbox" name="elective" onclick="return myfun()" value="Goverment" id="Govt" class="checkbox">Goverment</label>
-        
-        <label for="CRS"><input type="checkbox" name="elective" onclick="return myfun()" value="Christian Religious Studies" id="CRS" class="checkbox">Chrsitian Religious Studies</label>
+            <label for="Physics"><input type="checkbox" name="elective" onclick="return myfun()" value="Physics" id="Physics" class="checkbox">Physics</label>
+            
+            <label for="Chemistry"><input type="checkbox" name="elective" onclick="return myfun()" value="Chemistry" id="Chemistry" class="checkbox">Chemistry</label>
+            
+            <label for="Biology"><input type="checkbox" name="elective" onclick="return myfun()" value="Biology" id="Biology" class="checkbox">Biology</label>
+            
+            <label for="Geography"><input type="checkbox" name="elective" onclick="return myfun()" value="Geography" id="Geography" class="checkbox">Geography</label>
+            
+            <label for="Principles-of-Cost-Accounting"><input type="checkbox" name="elective" onclick="return myfun()" value="Prin. Cost Acct." id="Principles-of-Cost-Accounting" class="checkbox">Principles of Cost Accounting</label>
+            
+            <label for="Financial-Accounting"><input type="checkbox" name="elective" onclick="return myfun()" value="Fin. Acct." id="Financial-Accounting" class="checkbox">Financial-Accounting</label>
+            
+            <label for="Business-Management"><input type="checkbox" name="elective" onclick="return myfun()" value="Business Mgt." id="Business-Management" class="checkbox">Business Management</label>
+            
+            <label for="Economics"><input type="checkbox" name="elective" onclick="return myfun()" value="Economics" id="Economics" class="checkbox">Economics</label>
+            
+            <label for="History"><input type="checkbox" name="elective" onclick="return myfun()" value="History" id="History" class="checkbox">History</label>
+            
+            <label for="French"><input type="checkbox" name="elective" onclick="return myfun()" value="French" id="French" class="checkbox">French</label>
+            
+            <label for="Govt"><input type="checkbox" name="elective" onclick="return myfun()" value="Gov't" id="Govt" class="checkbox">Goverment</label>
+            
+            <label for="CRS"><input type="checkbox" name="elective" onclick="return myfun()" value="CRS" id="CRS" class="checkbox">Chrsitian Religious Studies</label>
 
-        <label for="gka"><input type="checkbox" name="elective" onclick="return myfun()" value="General Knowledge in Arts" id="gka" class="checkbox">General Knowledge in Arts</label>
+            <label for="gka"><input type="checkbox" name="elective" onclick="return myfun()" value="GKA" id="gka" class="checkbox">General Knowledge in Arts</label>
 
-        <label for="lit"><input type="checkbox" name="elective" onclick="return myfun()" value="Literature" id="lit" class="checkbox">Literature in English</label>
+            <label for="lit"><input type="checkbox" name="elective" onclick="return myfun()" value="Literature" id="lit" class="checkbox">Literature in English</label>
 
-        <label for="twi"><input type="checkbox" name="elective" onclick="return myfun()" value="Twi" id="twi" class="checkbox">Twi</label>
+            <label for="twi"><input type="checkbox" name="elective" onclick="return myfun()" value="Twi" id="twi" class="checkbox">Twi</label>
 
-        <label for="ga"><input type="checkbox" name="elective" onclick="return myfun()" value="Ga" id="ga" class="checkbox">Ga</label>
+            <label for="ga"><input type="checkbox" name="elective" onclick="return myfun()" value="Ga" id="ga" class="checkbox">Ga</label>
 
-        <label for="dangme"><input type="checkbox" name="elective" onclick="return myfun()" value="Dangme" id="dangme" class="checkbox">Dangme</label>
+            <label for="dangme"><input type="checkbox" name="elective" onclick="return myfun()" value="Dangme" id="dangme" class="checkbox">Dangme</label>
 
-        <label for="ewe"><input type="checkbox" name="elective" onclick="return myfun()" value="Ewe" id="ewe" class="checkbox">Ewe</label>
+            <label for="ewe"><input type="checkbox" name="elective" onclick="return myfun()" value="Ewe" id="ewe" class="checkbox">Ewe</label>
 
-        <label for="food"><input type="checkbox" name="elective" onclick="return myfun()" value="Food and Nutrition" id="food" class="checkbox">Food and Nutrition</label>
+            <label for="food"><input type="checkbox" name="elective" onclick="return myfun()" value="Food & Nut." id="food" class="checkbox">Food and Nutrition</label>
 
-        <label for="mgt-in-liv"><input type="checkbox" name="elective" onclick="return myfun()" value="Management In Living" id="mgt-in-liv" class="checkbox">Management In Living</label>
+            <label for="mgt-in-liv"><input type="checkbox" name="elective" onclick="return myfun()" value="Mgt in Liv" id="mgt-in-liv" class="checkbox">Management In Living</label>
 
-        <label for="tex"><input type="checkbox" name="elective" onclick="return myfun()" value="Textiles" id="tex" class="checkbox">Textiles</label>
+            <label for="tex"><input type="checkbox" name="elective" onclick="return myfun()" value="Textiles" id="tex" class="checkbox">Textiles</label>
 
-        <label for="basketry"><input type="checkbox" name="elective" onclick="return myfun()" value="Basketry" id="basketry" class="checkbox">Basketry</label>
+            <label for="basketry"><input type="checkbox" name="elective" onclick="return myfun()" value="Basketry" id="basketry" class="checkbox">Basketry</label>
 
-        <label for="pic"><input type="checkbox" name="elective" onclick="return myfun()" value="Picture Making" id="pic" class="checkbox">Picture Making</label>
+            <label for="pic"><input type="checkbox" name="elective" onclick="return myfun()" value="Pic. Making" id="pic" class="checkbox">Picture Making</label>
 
-        <label for="sculp"><input type="checkbox" name="elective" onclick="return myfun()" value="Sculpture" id="sculp" class="checkbox">Sculpture</label>
+            <label for="sculp"><input type="checkbox" name="elective" onclick="return myfun()" value="Sculpture" id="sculp" class="checkbox">Sculpture</label>
 
-        <label for="graph"><input type="checkbox" name="elective" onclick="return myfun()" value="Graphic Design" id="graph" class="checkbox">Graphic Design</label>
+            <label for="graph"><input type="checkbox" name="elective" onclick="return myfun()" value="Graphic Design" id="graph" class="checkbox">Graphic Design</label>
 
-        <label for="leather"><input type="checkbox" name="elective" onclick="return myfun()" value="Leather Work" id="leather" class="checkbox">Leather Work</label>
+            <label for="leather"><input type="checkbox" name="elective" onclick="return myfun()" value="Leather Work" id="leather" class="checkbox">Leather Work</label>
 
-        <label for="agric"><input type="checkbox" name="elective" onclick="return myfun()" value="General Agriculture" id="agric" class="checkbox">General Agriculture</label>
+            <label for="agric"><input type="checkbox" name="elective" onclick="return myfun()" value="Gen. Agric." id="agric" class="checkbox">General Agriculture</label>
 
-        <label for="animal"><input type="checkbox" name="elective" onclick="return myfun()" value="Animal Husbandry" id="animal" class="checkbox">Animal Husbandry</label>
-    </div>
+            <label for="animal"><input type="checkbox" name="elective" onclick="return myfun()" value="Animal Hus." id="animal" class="checkbox">Animal Husbandry</label>
+        </div>
         <div>
             <div id="notvalid"></div>
         </div>
@@ -76,6 +78,7 @@
         </div>
 
         <button type="button" id="add-electives">Add to Calculator</button>
+    </section>
 
         
 
@@ -83,118 +86,149 @@
     
 
 
+    
+    <form action="#" onsubmit="return false" class="container mt-4">
 
-    <form action="#" onsubmit="return false">
-        <label for="english">English:</label>
-        <select name="english" id="english" class="core">
-            <option value="1">A1</option>
-            <option value="2">B2</option>
-            <option value="3">B3</option>
-            <option value="4">C4</option>
-            <option value="5">C5</option>
-            <option value="6">C6</option>
-            <option value="7">D7</option>
-            <option value="8">E8</option>
-            <option value="9">F9</option>
-        </select>
-        <label for="core-maths">Core Maths:</label>
-        <select name="core-maths" id="core-maths" class="core">
-            <option value="1">A1</option>
-            <option value="2">B2</option>
-            <option value="3">B3</option>
-            <option value="4">C4</option>
-            <option value="5">C5</option>
-            <option value="6">C6</option>
-            <option value="7">D7</option>
-            <option value="8">E8</option>
-            <option value="9">F9</option>
-        </select>
-        <label for="science">Integrated Science:</label>
-        <select name="science" id="science" class="core">
-            <option value="1">A1</option>
-            <option value="2">B2</option>
-            <option value="3">B3</option>
-            <option value="4">C4</option>
-            <option value="5">C5</option>
-            <option value="6">C6</option>
-            <option value="7">D7</option>
-            <option value="8">E8</option>
-            <option value="9">F9</option>
-        </select>
-        <label for="social">Social Studies:</label>
-        <select name="social" id="social" class="core">
-            <option value="1">A1</option>
-            <option value="2">B2</option>
-            <option value="3">B3</option>
-            <option value="4">C4</option>
-            <option value="5">C5</option>
-            <option value="6">C6</option>
-            <option value="7">D7</option>
-            <option value="8">E8</option>
-            <option value="9">F9</option>
-        </select>
-
-        <div>
+        <div align="center">
+            <h5>Are You A Science Student</h5>
             <label for="student-type"><input type="radio" name="student-type" required>Science Student</label>
             <label for="student-type"><input type="radio" name="student-type" required>Non-Science Student</label>
         </div>
 
-        <label for="e-maths" id="label1"></label>
-        <select name="e-maths" id="elec1" class="elective">
-            <option value="1">A1</option>
-            <option value="2">B2</option>
-            <option value="3">B3</option>
-            <option value="4">C4</option>
-            <option value="5">C5</option>
-            <option value="6">C6</option>
-            <option value="7">D7</option>
-            <option value="8">E8</option>
-            <option value="9">F9</option>
-            <option value="0">Not Available</option>
-        </select>
-        <label for="physics" id="label2"></label>
-        <select name="physics" id="elec2" class="elective">
-            <option value="1">A1</option>
-            <option value="2">B2</option>
-            <option value="3">B3</option>
-            <option value="4">C4</option>
-            <option value="5">C5</option>
-            <option value="6">C6</option>
-            <option value="7">D7</option>
-            <option value="8">E8</option>
-            <option value="9">F9</option>
-            <option value="0">Not Available</option>
-        </select>
-        <label for="chemistry" id="label3"></label>
-        <select name="chemistry" id="elec3" class="elective">
-            <option value="1">A1</option>
-            <option value="2">B2</option>
-            <option value="3">B3</option>
-            <option value="4">C4</option>
-            <option value="5">C5</option>
-            <option value="6">C6</option>
-            <option value="7">D7</option>
-            <option value="8">E8</option>
-            <option value="9">F9</option>
-            <option value="0">Not Available</option>
-        </select>
-        <label for="biology" id="label4"></label>
-        <select name="biology" id="elec4" class="elective">
-            <option value="1">A1</option>
-            <option value="2">B2</option>
-            <option value="3">B3</option>
-            <option value="4">C4</option>
-            <option value="5">C5</option>
-            <option value="6">C6</option>
-            <option value="7">D7</option>
-            <option value="8">E8</option>
-            <option value="9">F9</option>
-            <option value="0">Not Available</option>
-        </select>
-        <button type="submit" id="calculate">Calculate</button>
+        <section class="row mt-3">
+            <div class="corediv col-md-6 row">
+                <div class="col-md-6 mt-3">
+                    <label for="english" class="core-label">English</label>
+                    <select name="english" id="english" class="core">
+                        <option value="1">A1</option>
+                        <option value="2">B2</option>
+                        <option value="3">B3</option>
+                        <option value="4">C4</option>
+                        <option value="5">C5</option>
+                        <option value="6">C6</option>
+                        <option value="7">D7</option>
+                        <option value="8">E8</option>
+                        <option value="9">F9</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label for="core-maths" class="core-label">Core Maths:</label>
+                    <select name="core-maths" id="core-maths" class="core">
+                        <option value="1">A1</option>
+                        <option value="2">B2</option>
+                        <option value="3">B3</option>
+                        <option value="4">C4</option>
+                        <option value="5">C5</option>
+                        <option value="6">C6</option>
+                        <option value="7">D7</option>
+                        <option value="8">E8</option>
+                        <option value="9">F9</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label for="science" class="core-label">Integrated Science:</label>
+                    <select name="science" id="science" class="core">
+                        <option value="1">A1</option>
+                        <option value="2">B2</option>
+                        <option value="3">B3</option>
+                        <option value="4">C4</option>
+                        <option value="5">C5</option>
+                        <option value="6">C6</option>
+                        <option value="7">D7</option>
+                        <option value="8">E8</option>
+                        <option value="9">F9</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label for="social" class="core-label">Social Studies:</label>
+                    <select name="social" id="social" class="core">
+                        <option value="1">A1</option>
+                        <option value="2">B2</option>
+                        <option value="3">B3</option>
+                        <option value="4">C4</option>
+                        <option value="5">C5</option>
+                        <option value="6">C6</option>
+                        <option value="7">D7</option>
+                        <option value="8">E8</option>
+                        <option value="9">F9</option>
+                    </select>
+                    
+                </div>
+            </div>
+            
+
+            
+
+            <div class="electivediv col-md-6 row">
+                <div class="col-md-6 mt-3">
+                    <label for="e-maths" id="label1" class="elec-label">Elective 1:</label>
+                    <select name="e-maths" id="elec1" class="elective">
+                        <option value="1">A1</option>
+                        <option value="2">B2</option>
+                        <option value="3">B3</option>
+                        <option value="4">C4</option>
+                        <option value="5">C5</option>
+                        <option value="6">C6</option>
+                        <option value="7">D7</option>
+                        <option value="8">E8</option>
+                        <option value="9">F9</option>
+                        <option value="0">Not Available</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label for="physics" id="label2" class="elec-label">Elective 2:</label>
+                    <select name="physics" id="elec2" class="elective">
+                        <option value="1">A1</option>
+                        <option value="2">B2</option>
+                        <option value="3">B3</option>
+                        <option value="4">C4</option>
+                        <option value="5">C5</option>
+                        <option value="6">C6</option>
+                        <option value="7">D7</option>
+                        <option value="8">E8</option>
+                        <option value="9">F9</option>
+                        <option value="0">Not Available</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mt-3">
+                <label for="chemistry" id="label3" class="elec-label">Elective 3:</label>
+                <select name="chemistry" id="elec3" class="elective">
+                    <option value="1">A1</option>
+                    <option value="2">B2</option>
+                    <option value="3">B3</option>
+                    <option value="4">C4</option>
+                    <option value="5">C5</option>
+                    <option value="6">C6</option>
+                    <option value="7">D7</option>
+                    <option value="8">E8</option>
+                    <option value="9">F9</option>
+                    <option value="0">Not Available</option>
+                </select>
+                </div>
+                <div class="col-md-6 mt-3">
+                <label for="biology" id="label4" class="elec-label">Elective 4:</label>
+                <select name="biology" id="elec4" class="elective">
+                    <option value="1">A1</option>
+                    <option value="2">B2</option>
+                    <option value="3">B3</option>
+                    <option value="4">C4</option>
+                    <option value="5">C5</option>
+                    <option value="6">C6</option>
+                    <option value="7">D7</option>
+                    <option value="8">E8</option>
+                    <option value="9">F9</option>
+                    <option value="0">Not Available</option>
+                </select>
+                </div>
+            </div>
+        </section>
+
+        <div align="center">
+            <button type="submit" id="calculate">Calculate</button>
+        </div>
     </form>
 
-    <h1 align="center">Aggregate</h1>
+    <h3 align="center">Aggregate</h3>
     <p align="center" id="final"></p>
     
 

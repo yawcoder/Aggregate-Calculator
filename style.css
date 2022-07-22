@@ -7,13 +7,9 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
-#elective-subjects{
+.elective-subjects{
     width: 100%;
-    height: 250px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -28,6 +24,11 @@ body{
     font-weight: bold;
 }
 
+#valuelist{
+    text-align: center;
+    font-weight: bold;
+}
+
 #add-electives{
     display: block;
     margin: auto;
@@ -36,10 +37,20 @@ body{
     border-radius: 10px;
 }
 
+.core-label{
+    font-weight: bold;
+}
 
-form{
+.elec-label{
+    font-weight: bold;
+    text-align: ce;
+}
+
+.core{
     width: 30%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    float: right;
+}
+.elective{
+    width: 30%;
+    float: right;
 }

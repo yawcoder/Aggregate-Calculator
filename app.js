@@ -40,7 +40,7 @@ function myfun(){
 
 //lines and function for putting selected electives in array
 let valueList = document.getElementById('valuelist');
-let text = 'you have selected : ';
+let text = 'You have selected : ';
 let listArray = [];
 
 let checkboxes = document.querySelectorAll('.checkbox');
