@@ -23,14 +23,14 @@ const addElectiveBtn = document.getElementById('add-electives');
 //function for limiting number of elective selections to just 4
 function myfun(){
      let allElectives = document.getElementsByName('elective');
-     let newVar = 0;
+     let checkedSubjects = 0;
      let count;
      for(count = 0; count<allElectives.length; count++){
           if(allElectives[count].checked == true){
-               newVar += 1;
+               checkedSubjects += 1;
           }
      }
-     if(newVar > 4){
+     if(checkedSubjects > 4){
           document.getElementById('notvalid').innerText = "***Please You Can Choose 4 Electives Only***"
           return false;
      }
@@ -50,11 +50,11 @@ for(let i=0; i < checkboxes.length; i++){
           if(checkboxes[i].checked == true && listArray.length < 4){
                //adding value to array when it is checked
                listArray.push(checkboxes[i].value);
-               valueList.innerText = text + listArray.join('/');
+               valueList.innerText = text + listArray.join(' / ');
           } else {
                //remove value from array when it is unchecked
                listArray = listArray.filter(e => e !== checkboxes[i].value);
-               valueList.innerText = text + listArray.join('/');
+               valueList.innerText = text + listArray.join(' / ');
           }
           //console.log(listArray);
      })
@@ -134,9 +134,6 @@ calcButton.addEventListener('click', () => {
           finalGrade.innerText = coreSum + elecSum;
 
      }
-     
-     
-
 });
 
 
